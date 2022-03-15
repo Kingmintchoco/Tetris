@@ -1,45 +1,36 @@
 /* font */
 @font-face {
-    font-family: 'Cafe24SsurroundAir';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-family: 'DOSSaemmul';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSSaemmul.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 * {
-    font-family: 'Cafe24SsurroundAir';
-    background-color: #cdb4db;
-    color: white;
+    font-family: 'DOSSaemmul';
 }
 
-html{
-    font-size: 18px;
-}
-
-#title{
-    font-size: 22px;
-    text-align: center;
-}
-
-.wrap{
+.grid{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    width: fit-content;
+    grid-template-columns: 350px 150px;
 }
 
-.main-contents{
-    padding: 1vw;
+.right-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.side-contents{
-    padding: 1vw;
-    font-size: 1.2rem;
+.game-board{
+    border: solid 2px;
 }
 
-.main-board{
-    border: 2px solid white;
+.next{
+    border: solid 2px;
 }
 
-.next-board{
-    border: 2px solid white;
+.play-button{
+    font-size: 15px;
+    padding: 15px 10px;
+    cursor: pointer;
 }
